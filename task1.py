@@ -30,16 +30,18 @@ def calculate():
         area = t * area
         area = math.sqrt(area)
 
-        answer.set(area)
+        
+    elif side2 == "":
+        area = "Area cannot be found with the given information"        
         
     
-    else:
+    elif (side3 == "" and side1 == ""):
         side2 = float(side2)
         height = float(height)
 
         area = (side2 * height) / 2
         
-        answer.set(area)
+    answer.set(area)
     
 
 trianglephoto = PhotoImage(file = "triangle.png")
